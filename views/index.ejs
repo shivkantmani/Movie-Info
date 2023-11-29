@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Alien Movie</title>
+</head>
+<body>
+    <header>
+        <h1>Alien Movie</h1>
+    </header>
+    <main>
+        <div class="container">
+            <form action="/" method="POST">
+                <input type="search" placeholder="Search movie" name="movie">
+            </form>
+            <div class="result">
+                <img src="<%= data.Poster %>" alt="">
+                <div class="info">
+                    <div class="title">
+                       <h3><%= data.Title %></h3>
+                        <p>Directed by: <%= data.Director %></p>
+                        <hr>
+                    </div>
+                    <div class="duration">
+                        <span>Genre: <%= data.Genre %></span>
+                        <span>Duration: <%= data.Runtime %></span>
+                    </div>
+                    <div class="cast">
+                        <span>Cast: <p class="actors"><%= data.Actors %></p></span>
+                        <span><p>Written By: <%= data.Writer %></p></span>
+                    </div>
+                    <fieldset>   
+                        <legend>Story: </legend>
+                        <p><%= data.Plot %></p>
+                    </fieldset>
+                        
+                    
+                </div>
+                
+            </div>
+        </div>
+    </main>
+    <% const currentYear = new Date().getFullYear() %>
+    <footer>
+        <p>Made with Love by Shaurya | Shiv Kant Mani</p>
+        <p>Copyright <%= currentYear %>. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-image: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+    color: rgb(22, 22, 84);
+}
+
+h1{
+    font-size: 48px;
+    color: crimson;
+    text-align: center;
+    margin: 3% 0;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+}
+.container{
+    width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    width: 30vw;
+    height: 25px;
+    outline: none;
+    border: 2px solid maroon;
+    border-radius: 20px;
+    padding: 3%;
+}
+.result{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5%;
+}
+img{
+    height: 50vh;
+    border-radius: 15px;
+}
+.info{
+    width: 35vw;
+    align-self: center;
+    padding: 3%;
+}
+.title{
+    margin: 3% 0;
+}
+h3{
+    font-size: 36px;
+    color: indigo;    
+}
+.title p{
+    margin: 1% 0;
+    padding-left: 5%;
+    opacity: 0.7;
+}
+.duration{
+    border: 2px solid indigo;
+    border-radius: 10px;
+    padding: 2%;
+    margin: 1% 0;
+    display: flex;
+    justify-content: space-between;
+}
+.cast{
+    padding: 2%;
+    border: 2px double indigo;
+    border-radius: 10px;
+}
+.actors{
+    font-weight: bold;
+    color: rgb(9, 79, 209);
+    display: inline-block;
+}
+fieldset{
+    padding: 2%;
+    margin: 1% 0;
+    border-radius: 20px;
+}
+
+footer{
+    text-align: center;
+    background-color: #f7797d;
+    padding: 1% 0;
+}
